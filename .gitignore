@@ -1,0 +1,7 @@
+# Reading notes and indexes may be versioned by the end user.
+# Original papers and temporary files remain local.
+#*.[pP][dD][fF]
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
