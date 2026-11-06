@@ -1,5 +1,31 @@
 # Save and Retrieve
 
+## Language and Paths
+
+Before writing, apply the explicit saved-language choice in `private/PREFERENCES.md`.
+If it is absent, ask Chinese or English and wait before writing personal records.
+Write note prose, judgments and new index descriptions in that language; keep
+structured field names English and preserve original user quotes verbatim.
+Do not translate existing entries without a request. Local saving does not include
+Git staging, committing, pushing or syncing. Resolve workspace paths from
+[MAIN.md](../MAIN.md)'s directory, not from the prompts directory. Use UTF-8.
+
+## First Save
+
+No personal files are shipped with the repository. Once the language preference
+is confirmed and the user requests a record, create missing `private/notes/`,
+`private/LIBRARY.md` and `private/TAGS.md` automatically. Create `private/papers/`
+only if needed; an original PDF may remain at its supplied external path. Never
+overwrite an existing index to initialize it. No setup script or prebuilt library
+is required.
+
+Initialize the library with `Archived`, `In Progress`, `Paused`, and
+`Provisional Summary` sections. Use `summary_not_archived` for a provisional
+record. Populate only the section matching the note's current status. A progress
+record remains `in_progress`; saving alone does not mean reading is complete.
+Initialize the tag index with a library backlink and entries for the current
+paper's tags. Create tag anchors only as needed.
+
 ## One Paper, One Note
 
 On save, use [NOTE.md](../templates/NOTE.md). Choose a stable `paper_id`
@@ -29,6 +55,9 @@ Use a few stable snake_case tags:
 Topics, methods, writing/visual references and personal recall phrases can all be
 tags. Keep their confirmation/category explicit. A tag revision changes current
 tags and indexes; the previous decision remains in History.
+Do not treat praise for a topic or figure as confirmation of an exact tag name.
+Unless the user confirms a tag or directly requests that label, put inferred tags
+in `suggested_tags`. Preserve the expressed judgment in the note regardless.
 
 ## Two Indexes
 
@@ -44,8 +73,11 @@ paper's entries; retain unrelated notes and tags.
 ## Before Finishing
 
 Open the written note; check metadata, status, conclusion, tags and evidence.
-Follow the note, original and tag links in both directions. Leave library tracking
-and sharing decisions to the user; PDFs are ignored by default. Report the note
+Follow the note, original and tag links in both directions. Personal files remain
+under the ignored `private/` directory; do not publish them. Report the note
 and library links; never claim a successful
 write or check that was not performed. If writing is unavailable, return the filled
 note and index updates as text and state that they were not saved locally.
+
+Apply MAIN.md's original-reading reminder only if the reply also analyzes the
+paper; omit it from save-only confirmations.

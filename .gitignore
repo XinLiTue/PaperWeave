@@ -1,6 +1,6 @@
-# Reading notes and indexes may be versioned by the end user.
-# Original papers and temporary files remain local.
-#*.[pP][dD][fF]
+# Personal papers, preferences, notes, indexes and temporary files stay local.
+/private/
+*.[pP][dD][fF]
 __pycache__/
 *.pyc
 .DS_Store

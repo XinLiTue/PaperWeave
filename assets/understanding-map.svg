@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="480" viewBox="0 0 1120 480" role="img" aria-labelledby="title desc">
+  <title id="title">PaperWeave understanding map</title>
+  <desc id="desc">Six reading directions grow from a central understanding map. Choose one or more branches to explore in depth.</desc>
+  <rect width="1120" height="480" rx="24" fill="#F8FAFC"/>
+  <g fill="none" stroke-width="2">
+    <path d="M448 219 C383 219 396 97 324 97" stroke="#A8BBD2"/>
+    <path d="M448 240 H324" stroke="#78ACA9"/>
+    <path d="M448 261 C383 261 396 383 324 383" stroke="#A8BBD2"/>
+    <path d="M672 219 C737 219 724 97 796 97" stroke="#A8BBD2"/>
+    <path d="M672 240 H796" stroke="#78ACA9"/>
+    <path d="M672 261 C737 261 724 383 796 383" stroke="#A8BBD2"/>
+  </g>
+  <g fill="#fff" stroke="#DFE6EE">
+    <rect x="52" y="51" width="272" height="92" rx="12"/>
+    <rect x="52" y="194" width="272" height="92" rx="12"/>
+    <rect x="52" y="337" width="272" height="92" rx="12"/>
+    <rect x="796" y="51" width="272" height="92" rx="12"/>
+    <rect x="796" y="194" width="272" height="92" rx="12"/>
+    <rect x="796" y="337" width="272" height="92" rx="12"/>
+  </g>
+  <rect x="448" y="174" width="224" height="132" rx="18" fill="#18334D"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="560" y="206" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="2" fill="#A9C7DD">PAPERWEAVE</text>
+    <text x="560" y="238" text-anchor="middle" font-size="21" font-weight="600" fill="#fff">Understanding</text>
+    <text x="560" y="265" text-anchor="middle" font-size="21" font-weight="600" fill="#fff">Map</text>
+    <g font-size="17" font-weight="600" fill="#233B53">
+      <text x="76" y="88">Research problem</text>
+      <text x="76" y="231">Methods &amp; models</text>
+      <text x="76" y="374">Results &amp; evidence</text>
+      <text x="820" y="88">Contributions</text>
+      <text x="820" y="231">Assumptions &amp; limits</text>
+      <text x="820" y="374">Your research</text>
+    </g>
+    <g font-size="13" fill="#66788A">
+      <text x="76" y="113">Context &#183; motivation &#183; question</text>
+      <text x="76" y="256">Mechanisms &#183; equations &#183; derivations</text>
+      <text x="76" y="399">Figures &#183; experiments &#183; comparisons</text>
+      <text x="820" y="113">New ideas &#183; connections &#183; value</text>
+      <text x="820" y="256">Conditions &#183; gaps &#183; open questions</text>
+      <text x="820" y="399">Relevance &#183; reuse &#183; next questions</text>
+    </g>
+    <text x="560" y="347" text-anchor="middle" font-size="12" fill="#597084">Choose one or more branches.</text>
+    <text x="560" y="367" text-anchor="middle" font-size="12" fill="#597084">Explore. Connect. Go deeper.</text>
+  </g>
+  <g fill="#78ACA9"><circle cx="324" cy="240" r="4"/><circle cx="796" cy="240" r="4"/></g>
+</svg>

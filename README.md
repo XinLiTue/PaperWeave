@@ -1,47 +1,55 @@
 # PaperWeave
 
-**A Structured Tool for Literature Reading, Understanding Maps, and Tag Organization**
+English | [Chinese (Simplified)](README.zh-CN.md)
 
-Read papers with an AI agent, explore an understanding map, save your own judgment
-and tags, and find the paper later by a remembered idea, DOI or filename.
+**A general-purpose AI skill for understanding papers, finding key passages, and resolving questions.**
 
-## Start
+Open this folder in your local AI workspace and start with [MAIN.md](MAIN.md).
+PaperWeave guides the agent from a concise understanding map to focused discussion
+of the models, evidence, and questions that matter to you.
 
-Open this folder in an AI app with file/PDF access. Give it [MAIN.md](MAIN.md):
+## Get started
 
-```text
-Read MAIN.md and follow it. Use Chinese for conversation and English field names.
-```
+Use an AI app that can read local files and PDFs. Saving notes also requires file
+write access. PaperWeave itself needs no package installation or server.
 
-Then provide a paper, choose a map node or ask a question, and say "save" when ready.
-Use "pause" for a checkpoint or "do not archive". Apps supporting AGENTS.md can
-discover the entry automatically.
+1. Download or clone this repository and open the folder in your AI app.
+2. Put a paper in `private/papers/`, or provide its local path.
+3. Send:
 
-## Your Library
+   ```text
+   Read MAIN.md and follow it to help me read this paper: <PDF path>
+   ```
 
-```text
-private/
-  papers/           original PDFs (or use an external source path)
-  notes/            one Markdown reading record per paper
-  LIBRARY.md        paper, DOI, note, original and tag links
-  TAGS.md           tags -> papers
-```
+The agent follows the reading workflow from there. Apps that load [AGENTS.md](AGENTS.md)
+can discover the entry point automatically; otherwise, name `MAIN.md` explicitly.
+This is a Markdown-based workflow with `MAIN.md` as its entry point.
 
-Put papers in `private/papers/` or supply an external path. On first save, the agent
-creates the note and indexes. Notes and indexes are eligible for Git tracking;
-PDFs are ignored. The folder name private/ does not enforce access restrictions.
+## Start with a map, explore the branches
 
-Later ask by remembered judgment, tag, DOI, title or original filename.
+The skill first outlines the paper's structure and builds an **Understanding Map**:
+different directions for exploring its research problem, methods, results, and limits.
+Choose **one or several branches** to explore, switch directions, or ask how branches
+connect. Each deeper explanation points to pages, equations, or figures so you can
+locate the passages that deserve a closer read.
 
-## What Is Included
+![Reading directions branching from the understanding map](assets/understanding-map.svg)
 
-[MAIN](MAIN.md) links the [reading rules](prompts/READ.md),
-[saving rules](prompts/SAVE.md) and [single note template](templates/NOTE.md).
+This is a reading-navigation sketch; branches expand with the paper and your questions.
+Try "Explore the methods and results," then "How does this assumption affect the
+results?" Say "save" to keep your judgment.
 
-No Python package or server is required. Automatic saving needs an AI app that can
-write files; plain chat only returns text. Notes preserve conclusions, not full chats.
+## Keep what matters
 
-You decide whether to keep your library local, back it up in a private repository,
-or share selected notes. Add `/private/` to your own .gitignore if you want to
-exclude the whole library. Choose your own repository and license.
-# PaperWeave
+The agent asks whether saved content should be Chinese or English and remembers
+your choice. Notes and searchable indexes are written under `private/` when you
+ask to save; they are not automatically committed or pushed to Git. You control
+what you track and share; `private/` and PDFs are Git-ignored by default.
+No personal library is included. On your first save, the agent creates the local
+notes and indexes automatically after confirming your language preference.
+
+The workflow is defined in [MAIN.md](MAIN.md), with focused rules for
+[reading](prompts/READ.md), [saving](prompts/SAVE.md), and a [note template](templates/NOTE.md).
+
+**Reading the original paper is irreplaceable; analysis only helps you quickly
+understand it and locate relevant content.**
