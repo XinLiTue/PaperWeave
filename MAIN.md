@@ -9,8 +9,8 @@ server is required.
 ## Language and Reading Purpose
 
 At the start of a reading workflow, check `private/PREFERENCES.md` for an explicit
-saved-language preference. If none exists, ask whether saved notes, judgments and
-index descriptions should be Chinese or English before writing personal records.
+saved-language preference. If none exists, ask which language the user prefers
+for saved notes, judgments and index descriptions before writing personal records.
 Do not infer this preference from the conversation language. Preserve an explicit
 choice in `private/PREFERENCES.md` and reuse it until the user changes it; do not
 ask again when the preference is already known. Keep titles, DOI, filenames and

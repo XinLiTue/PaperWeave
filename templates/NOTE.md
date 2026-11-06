@@ -9,7 +9,7 @@
 - version:
 - reading_date:
 - reading_status: in_progress | paused | summary_not_archived | archived
-- content_language: explicit saved preference (Chinese | English)
+- content_language: user's explicitly confirmed language preference
 - source_filename:
 - source_path: relative to this note when possible
 - source_sha256: optional

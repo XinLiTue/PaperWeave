@@ -3,7 +3,7 @@
 ## Language and Paths
 
 Before writing, apply the explicit saved-language choice in `private/PREFERENCES.md`.
-If it is absent, ask Chinese or English and wait before writing personal records.
+If it is absent, ask for the preferred language and wait before writing personal records.
 Write note prose, judgments and new index descriptions in that language; keep
 structured field names English and preserve original user quotes verbatim.
 Do not translate existing entries without a request. Local saving does not include

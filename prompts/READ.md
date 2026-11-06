@@ -1,7 +1,7 @@
 # Read and Understand
 
 Before the first understanding map, follow [MAIN.md](../MAIN.md)'s saved-language preference
-check. Ask Chinese or English if no explicit preference exists; reading the paper
+check. Ask for the preferred language if no explicit preference exists; reading the paper
 can proceed while awaiting the answer, but personal records must wait.
 Apply MAIN.md's original-reading reminder only to replies containing paper
 analysis, using the user's confirmed language preference.
