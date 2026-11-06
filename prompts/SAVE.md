@@ -75,7 +75,7 @@ paper's entries; retain unrelated notes and tags.
 
 Open the written note; check metadata, status, conclusion, tags and evidence.
 Follow the note, original and tag links in both directions. Personal files remain
-under `private/`, whose personal contents are ignored; do not publish them. Report the note
+under `private/`; personal Markdown files are ignored. Do not publish them. Report the note
 and library links; never claim a successful
 write or check that was not performed. If writing is unavailable, return the filled
 note and index updates as text and state that they were not saved locally.

@@ -45,8 +45,9 @@ The agent asks whether saved content should be Chinese or English and remembers
 your choice. Notes and searchable indexes are written under `private/` when you
 ask to save; they are not automatically committed or pushed to Git. You control
 what you track and share. Empty `private/papers/` and `private/notes/` folders are
-included via `.gitkeep` files, ready to use; personal contents and PDFs are ignored
-by Git. No personal library is included. On your first save, the agent creates the local
+included via `.gitkeep` files, ready to use. Git ignores all PDFs, personal Markdown
+files under `private/`, and temporary outputs in `private/tmp/`.
+No personal library is included. On your first save, the agent creates the local
 notes and indexes automatically after confirming your language preference.
 
 The workflow is defined in [MAIN.md](MAIN.md), with focused rules for

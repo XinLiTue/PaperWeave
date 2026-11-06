@@ -68,7 +68,8 @@ create an empty record or claim to recall an unavailable paper.
 - Put original papers in `private/papers/`, or retain an existing external path.
 - Put reading records and generated indexes under `private/`.
 - Only the empty storage structure is shared via `.gitkeep` placeholders.
-  Personal contents under `private/` and PDFs are Git-ignored by default. Keep personal content out of
+  Markdown files under `private/`, all PDFs, and `private/tmp/` are Git-ignored.
+  The storage directories themselves are not ignored. Keep personal content out of
   public examples and assets. Do not stage, commit, publish or upload personal
   files without an explicit request. Git ignore rules do not erase past commits
   or enforce filesystem access controls.

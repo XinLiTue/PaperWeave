@@ -1,12 +1,9 @@
-# Personal papers, preferences, notes, indexes and temporary files stay local.
-/private/*
-!/private/papers/
-!/private/notes/
-/private/papers/*
-/private/notes/*
-!/private/papers/.gitkeep
-!/private/notes/.gitkeep
+# Keep the storage structure; exclude personal documents by file type.
 *.[pP][dD][fF]
+/private/**/*.[mM][dD]
+
+# Generated previews and extraction caches stay local.
+/private/tmp/
 __pycache__/
 *.pyc
 .DS_Store

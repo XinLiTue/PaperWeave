@@ -40,7 +40,8 @@ Skill 先梳理论文结构，给出一张 **理解地图（Understanding Map）
 AI 会先询问保存内容使用中文还是英文，并记住你的选择。
 你要求保存时，笔记和可检索索引会写入 `private/`，不会自动提交或推送到 Git。
 由你决定跟踪和分享哪些文件。仓库通过 `.gitkeep` 保留 `private/papers/` 和
-`private/notes/` 空目录，克隆后即可使用；个人内容和 PDF 默认被 Git 忽略。
+`private/notes/` 空目录，克隆后即可使用。Git 忽略所有 PDF、`private/` 下的
+个人 Markdown 文件，以及 `private/tmp/` 中的临时产物。
 仓库不附带个人文献库。首次保存时，AI 会在确认语言偏好后自动创建本地笔记与索引。
 
 完整流程见 [MAIN.md](MAIN.md)，具体规则分为[阅读](prompts/READ.md)、
