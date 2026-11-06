@@ -12,7 +12,8 @@ Git staging, committing, pushing or syncing. Resolve workspace paths from
 
 ## First Save
 
-No personal files are shipped with the repository. Once the language preference
+Only `.gitkeep` placeholders for `private/papers/` and `private/notes/` are shipped;
+no personal records are included. Once the language preference
 is confirmed and the user requests a record, create missing `private/notes/`,
 `private/LIBRARY.md` and `private/TAGS.md` automatically. Create `private/papers/`
 only if needed; an original PDF may remain at its supplied external path. Never
@@ -74,7 +75,7 @@ paper's entries; retain unrelated notes and tags.
 
 Open the written note; check metadata, status, conclusion, tags and evidence.
 Follow the note, original and tag links in both directions. Personal files remain
-under the ignored `private/` directory; do not publish them. Report the note
+under `private/`, whose personal contents are ignored; do not publish them. Report the note
 and library links; never claim a successful
 write or check that was not performed. If writing is unavailable, return the filled
 note and index updates as text and state that they were not saved locally.

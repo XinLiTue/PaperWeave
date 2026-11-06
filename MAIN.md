@@ -16,7 +16,8 @@ choice in `private/PREFERENCES.md` and reuse it until the user changes it; do no
 ask again when the preference is already known. Keep titles, DOI, filenames and
 original user quotes intact. Do not translate existing records unless requested.
 If a preference was already stated explicitly in this chat, use it without asking
-again. A missing `private/` directory is normal on first use. After confirmation,
+again. Empty `private/papers/` and `private/notes/` directories are provided via
+tracked `.gitkeep` placeholders; recreate them if missing. After confirmation,
 create it as needed and store `saved_content_language` and `confirmed_on` in
 `private/PREFERENCES.md`. Do not create notes or indexes until a record is requested.
 
@@ -66,7 +67,8 @@ create an empty record or claim to recall an unavailable paper.
 
 - Put original papers in `private/papers/`, or retain an existing external path.
 - Put reading records and generated indexes under `private/`.
-- `private/` and PDFs are Git-ignored by default. Keep personal content out of
+- Only the empty storage structure is shared via `.gitkeep` placeholders.
+  Personal contents under `private/` and PDFs are Git-ignored by default. Keep personal content out of
   public examples and assets. Do not stage, commit, publish or upload personal
   files without an explicit request. Git ignore rules do not erase past commits
   or enforce filesystem access controls.

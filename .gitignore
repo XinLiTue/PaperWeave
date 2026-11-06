@@ -1,5 +1,11 @@
 # Personal papers, preferences, notes, indexes and temporary files stay local.
-/private/
+/private/*
+!/private/papers/
+!/private/notes/
+/private/papers/*
+/private/notes/*
+!/private/papers/.gitkeep
+!/private/notes/.gitkeep
 *.[pP][dD][fF]
 __pycache__/
 *.pyc
